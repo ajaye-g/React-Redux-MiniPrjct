@@ -44,15 +44,15 @@ const Component = ({count1,count2,add1,subtract1,add2,subtract2,reset}) =>
     <div>
         <h1>INCREMENT BY ONE</h1>
         <h2>FIRST COUNTER = {count1}</h2>
-        <button onClick={add1}>Add</button>
-        <button onClick={subtract1}>Subtract</button>
+        <button onClick={add1}><b>+</b></button>
+        <button onClick={subtract1}><b>-</b></button>
      </div>
 
     <div>
         <h1>INCREMENT BY FIVE</h1>
         <h2>SECOND COUNTER= {count2}</h2>
-        <button onClick={add2}>Add</button>
-        <button onClick={subtract2}>Subtract</button>
+        <button onClick={add2}><b>+</b></button>
+        <button onClick={subtract2}><b>-</b></button>
      </div>
     <div>
         <h1></h1>
