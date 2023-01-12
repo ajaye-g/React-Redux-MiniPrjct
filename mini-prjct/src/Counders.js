@@ -1,6 +1,7 @@
 import React from 'react'
 import{ Provider,connect} from 'react-redux';
-import{ createStore} from 'redux';
+import{ createStore,applyMiddleware} from 'redux';
+import logger from  'redux-logger'
 
 
  const initialState = {firstCounter:0,secondCounter : 0}
@@ -22,7 +23,7 @@ const countReducer = function(state,action){
  }
 }
 
-const store = createStore(countReducer);
+const store = createStore(countReducer,applyMiddleware(logger));
 const mapStateTOProps = initialState =>{
   return{
     count1:initialState.firstCounter,
